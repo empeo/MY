@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abanoub Emad Felix — Portfolio</title>
+    <meta name="description" content="Portfolio of Abanoub Emad Felix — Full Stack Developer & Computer Science Graduate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Slide Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation Dots -->
+    <nav class="slide-dots" id="slideDots" aria-label="Slide Navigation"></nav>
+
+    <!-- Arrow Navigation -->
+    <button class="nav-arrow nav-arrow--prev" id="prevBtn" aria-label="Previous Slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="nav-arrow nav-arrow--next" id="nextBtn" aria-label="Next Slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter" id="slideCounter">01 / 07</div>
+
+    <!-- Keyboard hint -->
+    <div class="keyboard-hint" id="keyboardHint">
+        <span>Use <kbd>←</kbd> <kbd>→</kbd> arrows or scroll to navigate</span>
+    </div>
+
+    <!-- ============ SLIDES ============ -->
+    <main class="slides-container" id="slidesContainer">
+
+        <!-- SLIDE 1: Welcome / Hero -->
+        <section class="slide slide--hero active" data-slide="0">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--1"></div>
+                <div class="shape shape--2"></div>
+                <div class="shape shape--3"></div>
+            </div>
+            <div class="slide__content hero-content">
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo-ring">
+                        <img src="Abanoub.jpeg" alt="Abanoub Emad Felix" class="hero-photo" id="heroPhoto">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <p class="hero-greeting animate-item">Hello, I'm</p>
+                    <h1 class="hero-name animate-item">Abanoub Emad <span class="highlight">Felix</span></h1>
+                    <p class="hero-title animate-item">Full Stack Developer</p>
+                    <p class="hero-subtitle animate-item">Computer Science Graduate · EELU University</p>
+                    <div class="hero-cta animate-item">
+                        <a href="#" class="btn btn--primary" id="ctaBtn">View My Story</a>
+                        <a href="mailto:empop214@gmail.com" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: About Me -->
+        <section class="slide slide--about" data-slide="1">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--4"></div>
+                <div class="shape shape--5"></div>
+            </div>
+            <div class="slide__content about-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">👤</span>
+                    <span>About Me</span>
+                </div>
+                <h2 class="section-title animate-item">Who I Am</h2>
+                <div class="about-grid">
+                    <div class="about-card animate-item">
+                        <div class="about-text">
+                            <p class="about-objective">A motivated and responsible graduate seeking an opportunity to build a professional career where I can develop my skills, gain experience, and contribute positively to the workplace.</p>
+                        </div>
+                    </div>
+                    <div class="about-details animate-item">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Assiut, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🎂</div>
+                            <div>
+                                <span class="detail-label">Date of Birth</span>
+                                <span class="detail-value">12 June 2001</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📧</div>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">empop214@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📱</div>
+                            <div>
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-value">(+20) 127-008-8069</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Education -->
+        <section class="slide slide--education" data-slide="2">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--6"></div>
+                <div class="shape shape--7"></div>
+            </div>
+            <div class="slide__content education-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">🎓</span>
+                    <span>Education & Training</span>
+                </div>
+                <h2 class="section-title animate-item">Academic Background</h2>
+                <div class="edu-grid">
+                    <div class="edu-card edu-card--main animate-item">
+                        <div class="edu-card__icon">🏛️</div>
+                        <div class="edu-card__content">
+                            <h3>Bachelor of Computer and Information Sciences</h3>
+                            <p class="edu-card__school">EELU University</p>
+                            <div class="edu-card__grade">
+                                <span class="grade-badge">Very Good with Honors</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-card animate-item">
+                        <div class="edu-card__icon">💻</div>
+                        <div class="edu-card__content">
+                            <h3>Full Stack Development Course</h3>
+                            <p class="edu-card__school">MEC Academy</p>
+                            <div class="edu-card__tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">Databases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Technical Skills -->
+        <section class="slide slide--tech" data-slide="3">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--8"></div>
+                <div class="shape shape--9"></div>
+            </div>
+            <div class="slide__content tech-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">⚡</span>
+                    <span>Technical Skills</span>
+                </div>
+                <h2 class="section-title animate-item">What I Work With</h2>
+                <div class="skills-grid">
+                    <div class="skill-card animate-item" style="--delay: 0">
+                        <div class="skill-card__icon">📊</div>
+                        <h3>Microsoft Office</h3>
+                        <p>Word, Excel, PowerPoint</p>
+                        <div class="skill-bar"><div class="skill-bar__fill" data-level="90"></div></div>
+                    </div>
+                    <div class="skill-card animate-item" style="--delay: 1">
+                        <div class="skill-card__icon">🌐</div>
+                        <h3>Internet & Email</h3>
+                        <p>Web & Email Handling</p>
+                        <div class="skill-bar"><div class="skill-bar__fill" data-level="85"></div></div>
+                    </div>
+                    <div class="skill-card animate-item" style="--delay: 2">
+                        <div class="skill-card__icon">💡</div>
+                        <h3>Programming</h3>
+                        <p>Full Stack Knowledge</p>
+                        <div class="skill-bar"><div class="skill-bar__fill" data-level="80"></div></div>
+                    </div>
+                    <div class="skill-card animate-item" style="--delay: 3">
+                        <div class="skill-card__icon">⌨️</div>
+                        <h3>Data Entry</h3>
+                        <p>Fast & Accurate Typing</p>
+                        <div class="skill-bar"><div class="skill-bar__fill" data-level="88"></div></div>
+                    </div>
+                    <div class="skill-card animate-item" style="--delay: 4">
+                        <div class="skill-card__icon">🖥️</div>
+                        <h3>Computer Systems</h3>
+                        <p>Hardware & Software</p>
+                        <div class="skill-bar"><div class="skill-bar__fill" data-level="82"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Personal Skills -->
+        <section class="slide slide--personal" data-slide="4">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--10"></div>
+                <div class="shape shape--11"></div>
+            </div>
+            <div class="slide__content personal-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">🌟</span>
+                    <span>Soft Skills</span>
+                </div>
+                <h2 class="section-title animate-item">Personal Strengths</h2>
+                <div class="personal-grid">
+                    <div class="personal-card animate-item" style="--delay: 0">
+                        <div class="personal-card__icon-wrap">
+                            <span>🗣️</span>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Strong interpersonal and communication skills</p>
+                    </div>
+                    <div class="personal-card animate-item" style="--delay: 1">
+                        <div class="personal-card__icon-wrap">
+                            <span>💪</span>
+                        </div>
+                        <h3>Work Under Pressure</h3>
+                        <p>Ability to perform effectively in demanding situations</p>
+                    </div>
+                    <div class="personal-card animate-item" style="--delay: 2">
+                        <div class="personal-card__icon-wrap">
+                            <span>🤝</span>
+                        </div>
+                        <h3>Teamwork</h3>
+                        <p>Collaborative mindset and team player spirit</p>
+                    </div>
+                    <div class="personal-card animate-item" style="--delay: 3">
+                        <div class="personal-card__icon-wrap">
+                            <span>⏰</span>
+                        </div>
+                        <h3>Time Management</h3>
+                        <p>Efficient prioritization and deadline management</p>
+                    </div>
+                    <div class="personal-card animate-item" style="--delay: 4">
+                        <div class="personal-card__icon-wrap">
+                            <span>🧩</span>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical thinking and creative solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Languages -->
+        <section class="slide slide--languages" data-slide="5">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--12"></div>
+                <div class="shape shape--13"></div>
+            </div>
+            <div class="slide__content languages-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">🌍</span>
+                    <span>Languages</span>
+                </div>
+                <h2 class="section-title animate-item">I Speak</h2>
+                <div class="languages-grid">
+                    <div class="lang-card animate-item">
+                        <div class="lang-flag">🇪🇬</div>
+                        <h3>Arabic</h3>
+                        <p class="lang-level">Native Speaker</p>
+                        <div class="lang-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="lang-card animate-item">
+                        <div class="lang-flag">🇬🇧</div>
+                        <h3>English</h3>
+                        <p class="lang-level">Good</p>
+                        <div class="lang-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Contact / Thank You -->
+        <section class="slide slide--contact" data-slide="6">
+            <div class="slide__bg-shapes">
+                <div class="shape shape--14"></div>
+                <div class="shape shape--15"></div>
+                <div class="shape shape--16"></div>
+            </div>
+            <div class="slide__content contact-content">
+                <div class="section-badge animate-item">
+                    <span class="badge-icon">📬</span>
+                    <span>Get In Touch</span>
+                </div>
+                <h2 class="section-title section-title--large animate-item">Let's Work <span class="highlight">Together</span></h2>
+                <p class="contact-subtitle animate-item">I'm always open to new opportunities and exciting projects</p>
+                <div class="contact-cards">
+                    <a href="mailto:empop214@gmail.com" class="contact-card animate-item">
+                        <div class="contact-card__icon">📧</div>
+                        <div>
+                            <span class="contact-card__label">Email</span>
+                            <span class="contact-card__value">empop214@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+201270088069" class="contact-card animate-item">
+                        <div class="contact-card__icon">📱</div>
+                        <div>
+                            <span class="contact-card__label">Phone</span>
+                            <span class="contact-card__value">(+20) 127-008-8069</span>
+                        </div>
+                    </a>
+                    <div class="contact-card animate-item">
+                        <div class="contact-card__icon">📍</div>
+                        <div>
+                            <span class="contact-card__label">Location</span>
+                            <span class="contact-card__value">Assiut, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="thankyou animate-item">
+                    <p>Thank you for watching! 🙏</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
